@@ -6,7 +6,7 @@
 
 <?php
 // The Query : Set limiter in WP_Query below
-$the_query = new WP_Query('category_name=profiles');
+$the_query = new WP_Query('category_name=awards');
 
 // The Loop
 while ( $the_query->have_posts() ) {

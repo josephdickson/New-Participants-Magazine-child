@@ -6,7 +6,7 @@
 
 <?php
 // The Query : Set limiter in WP_Query below
-$the_query = new WP_Query('category_name=profiles');
+$the_query = new WP_Query('category_name=photos');
 
 // The Loop
 while ( $the_query->have_posts() ) {
@@ -21,8 +21,7 @@ while ( $the_query->have_posts() ) {
 		else {
 			// do nothing
 		}
-	echo '<a href="' . get_permalink() . '"><h1>' . get_the_title() . '</a></h1>';
-	echo '<p>' . get_the_excerpt() . '</p></a></div></li>';
+		echo'</div></li>';
 }
 
 wp_reset_postdata();

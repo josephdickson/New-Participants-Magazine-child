@@ -16,12 +16,24 @@ get_header(); ?>
 					<?php 
 						$flag_middle = get_field('flag_middle_repeated', 'option'); 
 						$flag = get_field('flag', 'option');
-
 					?>
 
+
+
 					<?php
+
+					$args = array(
+		
+						'category_name' 	=> 'video',
+						'order_by'	 	=> 'date',
+						'order'			=> 'ASC',
+					);
+
+					$the_query = new WP_Query($args);
+
+
 					// The Query : Set limiter in WP_Query below
-					$the_query = new WP_Query('category_name=video');
+					$the_query = new WP_Query($args);
 				 	echo '<ul class="small-block-grid-1 large-block-grid-3">';
 					// The Loop
 					while ( $the_query->have_posts() ) {

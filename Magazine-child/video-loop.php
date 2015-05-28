@@ -23,7 +23,7 @@ while ( $query->have_posts() ) {
 			if ( has_post_thumbnail() ) {
 			the_post_thumbnail('full');
 			echo '</a>';
-			echo '<div class="flag" style="background-image:url(' . $flag['url'] . ');">Commencement Videos</div>';
+			echo '<div class="flag" style="background-image:url(' . $flag['url'] . ');">2015 Commencement Videos</div>';
 		}
 		else {
 			// do nothing

@@ -31,9 +31,26 @@ CSS Document
 	yellow: 			#ffce00
 	tan:				#e8d9b5
 */
+
+.clear {clear:left;}
+.panel.white.radius {
+	background-color: #fff !important;
+	border: 1px solid #f1f1f1 !important;
+	}
+.welcome-border p {
+	font-size:1rem;
+}
+.welcome-border h1 {
+	margin:.5rem 0 0 0;
+}
+
 .home .featured-post {
 	margin-bottom:1.25em;
 	padding-right: 1.25rem;
+}
+
+.home .charge {
+	margin-bottom:1.25em;
 }
 
 .home .features-box img.flag {	
@@ -48,11 +65,13 @@ CSS Document
 .home .panel.features-box h1.features-headline {
 	margin-top:-1.2em;
 }
-
+.home .panel.features-box li {color: #fff;}
 .home .panel.features-box a:link {color: #fff;}
 .home .panel.features-box a:visited {color: #fff;}
-.home .panel.features-box a:hover {color: #003d71; text-decoration: underline;}
+.home .panel.features-box a:hover {color: #003d71; text-decoration: underline; text-shadow: none;}
 .home .panel.features-box a:active {color: #003d71;}
+
+
 
 .home h3.blog-info {margin-bottom: 1em;}
 
@@ -63,4 +82,14 @@ CSS Document
 
 .postid-49 p {
 	margin-bottom: 0.3em;
+}
+.home div.welcome-border {border:solid #f7941d; border-width: 1px 0 1px 0; margin-bottom: .5rem;}
+div.banner {background-repeat: no-repeat;}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) { 
+.banner-logo {float:left; background-repeat:no-repeat;width:319px;height:159px;} 
+}
+@media only screen and (min-width: 40.1em) { 
+.banner-logo {float:left; background-repeat:no-repeat;width:497px;height:159px;} 
 }
